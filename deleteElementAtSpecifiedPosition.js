@@ -9,4 +9,4 @@ arr.pop();
 
 console.log(arr)
 
-// time complexity O(1)
+// time complexity is O(1)
