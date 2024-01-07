@@ -12,6 +12,20 @@ function SecondLargest(matrix) {
       }
     }
   }
+
+  // if using for loop it will look like
+  /** 
+   *   for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j] > largest) {
+        SecondLargest = largest;
+        largest = matrix[i][j];
+      } else if ( matrix[i][j] > SecondLargest  &&  matrix[i][j] < largest) {
+        SecondLargest = matrix[i][j];
+      }
+    }
+  }
+   */
   return SecondLargest;
 }
 
@@ -21,4 +35,4 @@ const arr = [
   [150, 100, 50]
 ];
 
-console.log(SecondLargest(arr))
+console.log(SecondLargest(arr));
