@@ -40,7 +40,7 @@ while (start < end) {
   end -= 2;
 
   if (start == end) {
-    newArr.push(arr[start]);
+    newArr.push(arr[start]); 
   }
 }
 
