@@ -15,7 +15,7 @@ Output: true
 Explanation: [5,7,23] are three consecutive odds.
  
 */
-
+ 
 var threeConsecutiveOdds = function (arr) {
   let length = arr.length;
   for (let i = 0; i < length - 2; i++) {
