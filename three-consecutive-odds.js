@@ -28,5 +28,5 @@ var threeConsecutiveOdds = function (arr) {
 
 const arr = [1, 1, 1];
 
-let ans = threeConsecutiveOdds(arr);
-console.log(ans);
+let result = threeConsecutiveOdds(arr);
+console.log(result);
