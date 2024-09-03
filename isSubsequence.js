@@ -20,22 +20,20 @@ Output: false
  
  */
 
-var isSubsequence = function (s, t) {
-  let pCount = 0;
+var isSubsequence = function(s, t) {
+    let sp = 0;
+    let tp = 0;
 
-  let priority = s[pCount];
-  for (let i = 0; i < t.length; i++) {
-    if (t[i] === priority) {
-      pCount++;
-      if (pCount <= s.length) {
-        priority = s[pCount];
-      } else {
-        return false;
-      }
+    while (sp < s.length && tp < t.length) {
+        if (s[sp] === t[tp]) {
+            sp++;
+        }
+        tp++;
     }
-  }
-  return Boolean(pCount == s.length);
+
+    return sp === s.length;    
 };
-let s = 'b';
-let t = 'c';
+
+let s = 'abc';
+let t = 'ahbgdc';
 console.log(isSubsequence(s, t));
